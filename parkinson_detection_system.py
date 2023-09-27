@@ -23,22 +23,22 @@ for key_var in df.columns:
         sample_parkinson = df_parkinson[key_var].to_numpy()
         
         
-        # Creating a box plot to compare distributions between healthy people and people who has parkinson
-        plt.figure(figsize=(8, 6))
-        sns.boxplot(data=[sample_healthy, sample_parkinson])
-        plt.title(f"Box Plot of {key_var}")
-        plt.xticks([0, 1], ["Healthy", "Parkinson"])
-        plt.show()
+        # # Creating a box plot to compare distributions between healthy people and people who has parkinson
+        # plt.figure(figsize=(8, 6))
+        # sns.boxplot(data=[sample_healthy, sample_parkinson])
+        # plt.title(f"Box Plot of {key_var}")
+        # plt.xticks([0, 1], ["Healthy", "Parkinson"])
+        # plt.show()
         
-        # Creating a histogram to know the distributions of data
-        plt.figure(figsize=(8, 6))
-        plt.hist(sample_healthy, bins=20, alpha=0.5, label='Healthy')
-        plt.hist(sample_parkinson, bins=20, alpha=0.5, label='Parkinson')
-        plt.title(f"Histogram of {key_var}")
-        plt.xlabel(key_var)
-        plt.ylabel("Frequency")
-        plt.legend()
-        plt.show()
+        # # Creating a histogram to know the distributions of data
+        # plt.figure(figsize=(8, 6))
+        # plt.hist(sample_healthy, bins=20, alpha=0.5, label='Healthy')
+        # plt.hist(sample_parkinson, bins=20, alpha=0.5, label='Parkinson')
+        # plt.title(f"Histogram of {key_var}")
+        # plt.xlabel(key_var)
+        # plt.ylabel("Frequency")
+        # plt.legend()
+        # plt.show()
 
 
         # print values in samples
